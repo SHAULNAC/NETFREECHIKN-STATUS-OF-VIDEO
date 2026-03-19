@@ -119,7 +119,7 @@ const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
                         hasResolved = true;
                         cleanup(false);
                     }
-                }, 6000);
+                }, 20000);
 
                 function cleanup(isOpen) {
                     clearTimeout(timeout);
